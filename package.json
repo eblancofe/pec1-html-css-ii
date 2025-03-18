@@ -29,7 +29,9 @@
   },
   "author": {
     "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "email": "jorditarrida@uoc.edu",
+	"name_student": "Eugenio Blanco Fernández",
+	"email_student": "eblancofe@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
