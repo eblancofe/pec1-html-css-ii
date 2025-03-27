@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Configuración responsive para distintos tamaños de dispositivos
+desde móviles, tabletas, ordenadores personales */
+
+/* Estilos básicos para todos los tamaños de pantalla */
+
+/* Configuración del cuerpo de la página principal */
+body {
+  font-size: 14px; //declaramos tamaño fuente
+  display: flex; //modelo diseño FlexBox
+  flex-direction: column; //organización en columna vertical
+  height: 100vh; //verticalidad al 100%
+  margin: 0;
+  padding: 2rem; //espaciado a 2*fuente(px)
+  font-family: $font-family-sans-serif; //selección de fuente usando variable
+  line-height: 24px;
+  background-color: $color-master-bg; //color de fondo usando variable
+  color: $color-master-fondo; //color de fuente usando variable
+}
+
+.uoc-container {
+  /* personalización del contenedor principal */
+  width: auto; //se dejan el ancho en automático
+  padding: 2rem; //espaciado a 2*fuente(px)
+  border-radius: 2rem; //borde redondeado a 2*fuente(px)
+  text-align: center; //centrar texto
+  background-color: $color-master-container; //color de fondo usando variable
+  //insertar sombra alrededor del contenedor completo
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* personalización de título h1 */
+.titulo-primero {
+  font-family: $font-family-serif; //selección de fuente usando variable
+  color: $color-master-fondo; //usamos color según variable asignada
+  text-align: center; //centrar texto
+  padding-top: 2rem; //espacio superior a 2*fuente(px)
+}
+
+/* personalización de título h2 y h3 */
+.titulos-segundos-terceros {
+  font-family: $font-family-serif; //selección de fuente usando variable
+  color: $color-master-fondo; //usamos color según variable asignada
+  text-align: left; //texto alineado a izquierda
+  padding-top: 2rem; //espacio superior a 2*fuente(px)
+}
+
+/* personalización de listado de ingredientes */
+.lista {
+  text-align: left; //texto alineado a izquierda
+  margin-left: 1rem; //dejar un margen a izquierda de 1*fuente(px)
+}
+
+/* añadir espacio entre párrafos */
+.lista-espacio {
+  margin-left: 2rem; //dejar un margen a izquierda de 1*fuente(px)
+}
+
+/* personalización de imágenes */
+.imagen-body {
+  display: block; //definimos bloque
+  //centramos la imagen
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem; //esquinas redondeadas a 1*fuente(px)
+  margin-top: 1.5rem; //dejar un margen superior a 1*fuente(px)
+  max-width: 200px; //ancho de imagen
+  height: auto; //altura automática
+  box-shadow: 0px 0px 15px #222; //añadimos sombra alrededor
+}
+
+/* personalización de imágenes en la misma línea */
+.contenedor-imagenes {
+  //display: grid; //configuración cuadrícula
+  display: block; //configuración de bloques
+  width: 100%; // todo el ancho
+  grid-template-columns: repeat(auto-fill, 400px); //cuadrícula de columnas de ancho fijo
+  justify-content: center; //texto centrado
+}
+.contenedor-imagenes div:last-child {
+  //centramos el elemento
+  margin-left: auto;
+  margin-right: auto;
+}
+.separador-imagen {
+  //centramos el elemento
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* personalización de pie de imágenes */
+.pie-imagen {
+  font-size: 10px; 
+  text-align: center; //centrar texto
+}
+
+/* personalización texto de párrafos */
+.texto-parrafo {
+  text-align: justify; //texto justificado
+  text-align-last: left; //alinear texto a izquierda
+}
+
+/* banner imagen portada + texto */
+#banner {  
+  color: white; //color del banner
+  text-align: center; //centrar texto
+  border: solid; //dibujamos borde del banner
+  border-color: $color-banner-border; //selección color borde
+  border-radius: 2rem; //esquinas redondeadas a 2*fuente(px)
+  margin: auto; //márgenes automáticos
+  padding: 50px 20px;
+  font-family: $font-family-serif; //selección de fuente
+  font-weight: 700; //grosor de fuente
+  background: url(../images/00-fondo.jpg) center; //imagen de fondo
+  box-shadow: 0px 0px 25px #222; //sombreado del banner
+}
+#banner-difuminado {
+  box-shadow: 0px 0px 25px #222; //sombreado del banner
+  backdrop-filter: blur(10px); //difuminados capa
+  border: solid; //mostramos borde
+}
+#banner-fuente-color { 
+  color: $color-banner-border; //colro de fuente usando variable
+  line-height: 1; //separación de línea entre texto
+  font-size: 1.2rem; //tamaño fuente 1.2*fuente(px)
+  width: auto; //ancho automático
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; //texto con sombre contorno blanco
+}
+#banner-fuente-debajo {
+  font-size: 0.7rem; //tamaño fuente 0.7*fuente(px)
+}
+
+/* pie de página */
+.uoc-footer {
+  margin-top: 1.5rem; //espacio superior a 1.5*fuente(px)
+  padding-bottom: 1.5rem; //espacio superior entre elementos a 1.5*fuente(px)
+  font-size: 0.75rem; //tamaño fuente 0.75*fuente(px)
+  text-align: center;  //centrar texto//
+  color: $color-letra-fondo; //color letra usando variable
+  width: auto; //ancho automático
+}
+
+/* formato de reloj */
+#reloj {
+  //personalización del texto del reloj digital a mostrar
+  top: 5px; 
+  right: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+/* formato de fecha */
+#fecha {
+  //personalización de la fecha actualizada a mostrar
+  top: 5px;
+  left: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+/* Estilos para pantallas de al menos 512px de ancho */
+@media (min-width: $mqMinWidth) { //Se aplica el código cuando el ancho del viewport tiene mínimo el valor de la variable 
+  body {
+    font-size: 14px; //tamaño fuente fijo
+  }
+  .imagen-body {
+    max-width: none; //se eliminan cotas máximas de anchura
+  }
+  .uoc-container {
+    max-width: none; //se eliminan cotas máximas de anchura
+  }
+  .contenedor-imagenes {
+    max-width: none; //se eliminan cotas máximas de anchura
+  }
+  #banner-fuente-color { 
+    font-size: 2rem; //tamaño fuente a 2*fuente(px)
+  }
+  #banner-fuente-debajo {
+    font-size: 1rem; //tamaño fuente a 1*fuente(px)
+  }
+}
+
+/* Estilos para pantallas de al menos 1024px de ancho */
+@media (min-width: $mqMaxWidth) { //Se aplica el código cuando el ancho del viewport tiene mínimo el valor de la variable 
+  body {
+    font-size: 18px; //tamaño fuente fijo
+  }
+  .uoc-container {
+    max-width: 1024px; //anchura máxima
+    //márgenes automáticos
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .contenedor-imagenes {
+    max-width: none; //anchura automática
+    display: grid; //configuración cuadrícula
+  }
+  .contenedor-imagenes div:last-child {
+    margin-left: 10%; //dejar margen izquierdo al 10% del total
+  }
+  .separador-imagen {
+    margin-left: 10%; //dejar margen izquierdo al 10% del total
+  }
+  #banner-fuente-color { 
+    font-size: 3rem; //tamaño fuente a 3*fuente(px)
+  }
+  #banner-fuente-debajo {
+    font-size: 2rem; //tamaño fuente a 2*fuente(px)
+  }
+}

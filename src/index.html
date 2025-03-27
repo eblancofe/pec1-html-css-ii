@@ -1,0 +1,338 @@
+<!--
+Alumno: Eugenio Blanco Fernández
+Aula: 01
+Asignatura: Herramientas HTML y CSS II
+## PEC1 - UOC Boilerplate ##
+Se propone un pequeño reto de desarrollo de un web de una sola página, partiendo de UOC Boilerplate, 
+en el cual, se deberán aplicar los conocimientos adquiridos en los módulos 1 y 2.
+-->
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head> <!-- cabecera de la Web -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> <!-- modelo responsive en diferentes dispositivos -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>UOC Boilerplate - PEC1 - Información y recetas sobre platos típicos</title> <!-- Título superior de la página -->
+  </head>
+  <body><!-- inicio cuerpo de la página-->
+    <div class="uoc-container"> <!-- capa de contenido -->
+      <div id="fecha"></div><!-- mostramos la fecha actual -->
+      <div id="reloj"></div><!-- mostramos la hora actual -->
+      <div id="banner"><!-- se muestra banner de portal Web -->
+        <div id="banner-difuminado">
+          <p id="banner-fuente-color">Información sobre platos típicos</p>
+          <p id="banner-fuente-debajo">Para no olvidar las tradiciones culinarias</p>
+        </div>
+      </div>
+      <!-- Título de la página -->
+      <!-- Título nivel 1 -->
+      <h1 class="titulo-primero"><i class="fa-solid fa-kitchen-set"></i> Recetas típicas de Extremadura <i class="fa-solid fa-utensils"></i></h1><!-- título primer nivel -->
+      <!-- Introducción a la temática de la página -->
+      <p class="texto-parrafo">
+        En este apartado, vamos a mostrar y a enseñar a preparar algunas de las recetas más típicas de la región de Extremadura.
+        En este caso, se muestra la elaboración propia de la receta, "MIGAS EXTREMEÑAS" o "MIGAS DEL PASTOR". 
+      </p>
+      <p class="texto-parrafo">LLamadas así, por el motivo de que antiguamente los pastores, tenían unas 
+        largas jornadas en el campo, llevaban el almuerzo o comida preparada, pero al tener esas jornada interminables, algunos ingredientes que llevaban, como por ejemplo, el pan, se les quedaba 
+        duro y humedecido, como no existía la abundancia, los pastores aprovechaban ese pan, cocinándolo con la grasa de las sobras de algunos alimentos de la matanza, como chorizo, panceta, 
+        incluso jamón, lomo, etc. Con esto, conseguían tener un alimento que podían aprovechar el pan sobrante del día anterior, junto con alimentos de la matanza más calóricos. Con el paso del tiempo, 
+        la receta se fue perfeccionando, añadiendo más ingredientes, además de añadir frutas, como uvas, pasas, melón, naranjas, mandarinas, etc. En algunas regiones se tomaban para desayunar, incluso 
+        con café con leche y las migas de acompañamiento.
+      </p>
+      <p class="texto-parrafo">
+        Esta receta, se encuentra realizada de forma principal y original según la tradición familiar, siguiendo los pasos de familiares directos (abuelas, madres, padres e hijos), 
+        transfiriéndose el conocimiento de la receta de una generación a otra, existiendo de esta forma, un relevo generacional, que de otra forma no sería posible, 
+        además de no perderse el conocimiento, así como su forma de realización tan particular en si misma.
+      </p>
+      <p class="texto-parrafo">
+        No nos atrevemos a decir que es la receta auténtica de nuestros ancestros, pero sí nos atrevemos a asegurar, que estamos ante una receta con sabor de antaño, 
+        es decir, huele a cocina de pueblo, como la que realizaban nuestras abuelas o madres en tiempos pasados, recuperando el sabor original y además respetando la tradición y 
+        costumbres en la mesa.
+      </p>
+      <p class="texto-parrafo">
+        Esperamos que os guste la realización de la receta y su final, añadiendo nuestro toque personal.
+      </p>
+      <!-- Título nivel 2 -->
+      <h2 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Listado de ingredientes</h2><!-- título segundo nivel -->
+      <p class="texto-parrafo">
+        Vamos a empezar por el principio de todo, en la siguiente lista, se muestran los ingredientes necesarios para realizar la receta de nuestras migas, tal y como se muestra a 
+        continuación, sería para unas 4 personas más o menos:
+      </p>
+      <ul class="lista"><!-- listado de ingredientes de la receta -->
+        <li><i class="fa-solid fa-bread-slice"></i><b> Pan</b>.&nbsp;&nbsp;Cantidad: 1 Hogaza o barra de pan (si es posible del día anterior).</li>
+        <li><i class="fa-solid fa-kitchen-set"></i><b> Ajos</b>.&nbsp;&nbsp;Cantidad: 1 Cabeza entera.</li>
+        <li><i class="fa-solid fa-pepper-hot"></i><b> Pimiento Rojo</b>.&nbsp;&nbsp;Cantidad: 1 unidad.</li>
+        <li><i class="fa-solid fa-pepper-hot"></i><b> Pimiento Verde</b>.&nbsp;&nbsp;Cantidad: 1 unidad.</li>
+        <li><i class="fa-solid fa-hotdog"></i><b> Chorizo ibérico</b>.&nbsp;&nbsp;Cantidad: 200gr.</li>
+        <li><i class="fa-solid fa-bacon"></i><b> Panceta ibérica</b>.&nbsp;&nbsp;Cantidad: 250gr.</li>
+        <li><i class="fa-solid fa-egg"></i><b> Huevos frescos</b>.&nbsp;&nbsp;Cantidad: 4.</li>
+        <li><i class="fa-solid fa-cow"></i><b> Leche entera</b>.&nbsp;&nbsp;Cantidad: 0.5L.</li>
+        <li><i class="fa-solid fa-glass-water-droplet"></i><b> Aceite de Oliva virgen extra</b>.&nbsp;&nbsp;Cantidad: 130 ml.</li>
+        <li><i class="fa-solid fa-mortar-pestle"></i><b> Pimentón de la Vera</b>.&nbsp;&nbsp;Cantidad: 1 cucharada grande.</li>
+        <li><i class="fa-solid fa-faucet-drip"></i><b> Agua</b>.&nbsp;&nbsp;Cantidad: 0.5L.</li>
+        <li><i class="fa-solid fa-cubes-stacked"></i><b> Sal</b>.&nbsp;&nbsp;Cantidad: 1 cucharada pequeña de postre/café.</li>
+        <li><i class="fa-solid fa-road-spikes"></i><b> Perejil fresco</b>.&nbsp;&nbsp;Cantidad: 20gr. o un puñado de brotes.</li>
+      </ul>
+      <picture><!-- se inserta 1 imagen -->
+        <source srcset="./assets/images/01-migas-ingredientes.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/01-migas-ingredientes.jpg?width=400" alt="Presentación de listado de ingredientes para hacer migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <!-- Título nivel 2 -->
+      <h2 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Preparación previa de algunos ingredientes</h2><!-- título segundo nivel -->
+      <p class="texto-parrafo">
+        Hay que preparar el pan para realizar las migas, para ello, con el pan sobrante o barra de pan, incluso hogaza del día anterior al menos, se trocea o se corta nuestro pan en pequeños trozos, puede ser utilizando un 
+        cuchillo u otro utensilio similar, como también se pueden utilizar las manos. 
+        Este paso es bastante importante, ya que va a depender para que nos quede una textura blanda e incluso cremosa del pan de nuestras migas. Una vez que tengamos cortado el pan en pequeño trozos, se juntan el pan troceado 
+        para que quede esponjoso, se vierte encima del pan la cantidad indicada previamente de leche entera con un poco de agua, para dejarlo toda una noche entera, para que se mezcle y se empape de buena manera la leche con nuestro 
+        pan troceado. Este paso se realiza para que las migas tengan una textura más cremosa quitando la sequedad del pan con la mezcla de leche. No hay que olvidar tapar el recipiente donde tengamos almacenadas las migas de los trozos de pan con la leche. 
+      </p>
+      <div class="contenedor-imagenes"><!-- se insertan 2 imágenes en cuadrícula -->
+        <div>
+          <picture>
+            <source srcset="./assets/images/02-migas-pan.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/02-migas-pan.jpg?width=400" alt="Preparación del pan para hacer migas Extremeñas" class="imagen-body">          
+          </picture>               
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/03-migas-leche.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/03-migas-leche.jpg?width=400" alt="Preparación del pan para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>        
+      </div>     
+      <!-- Título nivel 2 -->
+      <h2 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Preparación paso a paso</h2><!-- título segundo nivel -->
+      <p class="texto-parrafo">
+        En los siguientes pasos, se van a ir mostrando el proceso paso a paso en forma de itinerario, con la receta completa del plato típico de las "Migas Extremeñas" o "Migas del Pastor".
+      </p>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Preparación del pan</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">        
+        Para preparar el pan, se puede realizar con tiempo y de forma previa, según el paso previo descrito en el anterior apartado. Aunque también se puede realizar con el pan que tengamos sobrante del día a día, realizando los mismos pasos que 
+        se han descrito en el paso anterior.
+      </p>
+      <picture><!-- se inserta 1 imagen -->
+        <source srcset="./assets/images/04-migas-reposo.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/04-migas-reposo.jpg?width=400" alt="Reposo del pan troceado para hacer migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Seguimos con el pan</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Una vez que tengamos preparado de forma previa el trocedado del pan y haberlo dejado macerar toda una noche completa, tenemos bastante parte de receta completada. Ahora que tenemos el pan preparado, hay que volver a separarlo o desmenuzarlo 
+        trozo a trozo, el haberlo dejado una noche entera o un día completo nos facilitará de forma sorprendente esta tarea a realizar. Cuando tengamos el pan con una textura más consistente, vamos a desmenuzar en pequeños trozos el pan empapado con la leche, este 
+        paso tiene bastante importancia, ya que, harán que nos queden una migas jugosas a la vez que compactas y humedecidas.
+      </p>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Elaboración de ingredientes previos</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Hay que preparar parte de los ingredientes que se van a freir de forma previa a la elaboración principal de nuestro plato. Para ello, previamente, troceamos los dientes de ajo, junto con el chorizo ibérico y la panceta ibérica. Troceamos en 
+        pequeñas partes el pimiento verde y rojo también, este paso último, lo dejamos reservado para utilizarlo después en los siguiente pasos de elaboración de nuestra receta.
+      </p>
+      <div class="contenedor-imagenes"><!-- se insertan 4 imágenes en cuadrícula -->
+        <div>
+          <picture>
+            <source srcset="./assets/images/05-migas-ajos.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/05-migas-ajos.jpg?width=400" alt="Picado de ajos para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/06-migas-chorizo.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/06-migas-chorizo.jpg?width=400" alt="Picado de chorizo para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div>
+          <picture>
+            <source srcset="./assets/images/07-migas-panceta.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/07-migas-panceta.jpg?width=400" alt="Picado de panceta para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/11-migas-pimiento-verde.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/11-migas-pimiento-verde.jpg?width=400" alt="Picado de pimiento verde para hacer migas Extremeñas" class="imagen-body">        
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+      </div>
+      <picture><!-- se inserta 1 imagen -->
+        <source srcset="./assets/images/12-migas-pimiento-rojo.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/12-migas-pimiento-rojo.jpg?width=400" alt="Picado de pimiento rojo para hacer migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Elaboración del plato</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Ahora, en una sartén o cazuela lo suficientemente grande y honda. Se realiza el frito del embutido, en este caso, pasaremos a echar a la sartén el chorizo ibérico previamente troceado en trozos de tamaño normal tirando a grande, junto con la 
+        panceta ibérica, troceada previamente, este proceso finalizará, cuando tengamos bien fritos tanto el chorizo como la panceta, controlar si hay que añadir un poco de aceite de oliva para mejorar el frito, siempre que sea necesario. Una vez 
+        acabado este paso, retiramos y reservamos para después. 
+      </p>
+      <div class="contenedor-imagenes"><!-- se insertan 4 imágenes en cuadrícula -->
+        <div>
+          <picture>
+            <source srcset="./assets/images/09-migas-chorizo-frito-01.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/09-migas-chorizo-frito-01.jpg?width=400" alt="Chorizo frito para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/10-migas-chorizo-frito-02.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/10-migas-chorizo-frito-02.jpg?width=400" alt="Chorizo frito para hacer migas Extremeñas" class="imagen-body">        
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div>
+          <picture>
+            <source srcset="./assets/images/13-migas-pacenta-frito-01.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/13-migas-pacenta-frito-01.jpg?width=400" alt="Panceta frita para hacer migas Extremeñas" class="imagen-body">        
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/14-migas-pacenta-frito-02.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/14-migas-pacenta-frito-02.jpg?width=400" alt="Panceta frita para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="texto-parrafo">
+        Seguidamente, freímos los ajos troceados en pequeñas porciones con un poco de aceite de oliva virgen extra, aunque ver si hace falta, este aspecto es personal, no olvides la intención de que los dientes de ajos deben de quedar troceados en trozos 
+        y que sean lo más pequeños posibles, al freírlos deben de quedar dorados, en ningún caso quemados, con esto queremos decir, que hay que controlar el tiempo, como mucho un 3 minutos, removiendo de forma constante para que no se quemen. Una vez 
+        acabado este paso, retiramos y reservamos para después.
+      </p>
+      <picture><!-- se inserta imagen -->
+        <source srcset="./assets/images/08-migas-ajos-frito.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/08-migas-ajos-frito.jpg?width=400" alt="Ajos fritos para hacer migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <p class="texto-parrafo">
+        Cuando ya tengamos libre la sartén o cazuela de nuevo, echamos en la sartén el pimiento verde y rojo debidamente troceados en pasos anteriores. Se realiza un sofrito al gusto, puede ser de unos 10 minutos aproximadamente, según como se quiera que 
+        queden los pimientos, muy fritos, pochados o más crujientes, esto es algo más según los gustos de cada persona, en nuestro caso nos gustan que queden unos pimientos más pochados. Cuando finalicemos este paso, hay que sacar los pimientos y reservarlos 
+        para después, guardar el exceso de aceite de oliva para otras elaboraciones culinarias.
+      </p>
+      <picture><!-- se inserta imagen -->
+        <source srcset="./assets/images/17-migas-pimientos.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/17-migas-pimientos.jpg?width=400" alt="Pimientos fritos para hacer migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <p class="texto-parrafo">
+        Ahora, seguimos avanzando, estamos casi llegando al final de la receta. Hay que realizar la mezcla de todos los ingredientes realizados por separado, juntarlos en una sartén o cazuela grande, donde hemos elaborado la mayor parte del plato de esta receta. 
+        Echamos las migas preparadas previamente en la misma sartén que hemos sofrito el chorizo y la panceta, al añadirlas hay que removerlas de forma constante, puesto que, si no lo hacemos se nos pegarán y se quemarán las migas. En este paso, mientras se remueven 
+        las migas, hay que añadir el pimentón de la Vera previamente preparado, además de rectificar en sal si lo necesitamos. Este proceso puede durar bastante, unos 25 minutos más o menos, debido a que tenemos que estar todo el rato removiendo las migas para evitar 
+        que se nos peguen y quemen. 
+      </p>
+      <div class="contenedor-imagenes"><!-- se insertan 2 imágenes en cuadrícula -->
+        <div>
+          <picture>
+            <source srcset="./assets/images/15-migas-pan-frito.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/15-migas-pan-frito.jpg?width=400" alt="Mezcla de pan para hacer migas Extremeñas" class="imagen-body">                  
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>
+        <div class="separador-imagen">
+          <picture>
+            <source srcset="./assets/images/16-migas-mezcla.jpg?as=webp&width=400" type="image/webp">
+            <img src="./assets/images/16-migas-mezcla.jpg?width=400" alt="Mezcla con todos los ingredientes para hacer migas Extremeñas" class="imagen-body">        
+          </picture>
+          <figure>
+            <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+          </figure>
+        </div>        
+      </div>    
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Finalización del plato</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Una vez que tengamos las migas de pan troceadas, bien hechas, es decir, bien tostadas pero sin quemarse en la sartén. Añadimos los demás ingredientes ya preparados, se echa el chorizo, la panceta, los ajos, los pimientos verde y rojo, todo mezclado en la misma 
+        sartén o cazuela donde tengamos cocinadas las migas. Este último paso se realiza para que se mezclen de forma aleatoria todos los sabores de los alimentos que se encuentran dentro de la sartén, estaremos un rato revolviendo las migas con los demás ingredientes, 
+        pero no mucho más de 5 minutos más o menos.
+      </p>      
+      <picture><!-- se inserta imagen -->
+        <source srcset="./assets/images/18-migas-termina.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/18-migas-termina.jpg?width=400" alt="Plato terminado y en su punto de las migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Presentación del plato</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Con este último paso, solamente nos quedaría, servir en caliente y recién hechas las migas completas, o bien, que cada comensal se vaya echando en su plato de la sartén o cazuela grande que dispongamos para servilas o que se sirvan, según al gusto. 
+      </p>
+      <p class="texto-parrafo">
+        En la siguiente imagen se puede observar el plato terminado, servido en mesa y lista para su degustación.
+      </p>
+      <picture><!-- se inserta imagen -->
+        <source srcset="./assets/images/19-migas-presenta.jpg?as=webp&width=400" type="image/webp">
+        <img src="./assets/images/19-migas-presenta.jpg?width=400" alt="Presentación de migas Extremeñas" class="imagen-body">        
+      </picture>
+      <figure>
+        <figcaption class="pie-imagen"><b>Fuente:</b> Eugenio Blanco Fernández</figcaption>
+      </figure>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Añadiendo acompañamientos</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Se pueden añadir como acompañamiento a este plato, un huevo frito encima por ejemplo, le queda muy bien y sabroso. Aunque también, se puede añadir uvas, melón, pasas, naranjas, mandarinas, tomates, incluso con boquerones fritos. Esto se debe a que en 
+        cada localidad o región, se realizan las migas de una forma más particular, con lo que conlleva este proceso, es decir, se pueden acompañar las migas con bastate variedad de acompañamientos para una mejor degustación de este plato tradicional.
+      </p>
+      <!-- Título nivel 3 -->
+      <h3 class="titulos-segundos-terceros"><i class="fa-solid fa-kitchen-set"></i> Consejos</h3><!-- título tercer nivel -->
+      <p class="texto-parrafo">
+        Los ingredientes que se deben de utilizar para esta y otras recetas, deben ser ingredientes de buena calidad, y si puede ser también, que sean ingredientes locales y de cercanía.
+      </p>
+      <p class="texto-parrafo">
+        En esta receta, no se recomienda utilizar por ejemplo, chorizo ibérico ahumado o panceta ibérica ahumada, debido a que cambia el sabor de la receta tradicional y original completamente, aunque si lo que queremos conseguir es exactamente eso e innovar en la 
+        cocina, pues adelante, sobre los gustos podemos elegir diferentes caminos.
+      </p>
+      <p class="texto-parrafo">
+        Normalmente se humedecen las migas con agua solamente, pero he de añadir, en nuestra región y en el seno familiar, se realizaban de esta forma desde tiempos antiguos, no vamos a ser nosotros quienes cambien esa costumbre en la actualidad, personalmente opinamos que se podría, 
+        todo sería cuestión de probar.
+      </p>  
+      <p class="texto-parrafo">
+        Personalmente opinamos, que poca cantidad de sal hay que añadir a este plato, debido a que, tenemos el chorizo, panceta y el pan llevan sal incorporada en generosas cantidades, por este motivo creemos que no hace falta añadir más sal, pero ante todo queremos dejar claro, que está en vuestras manos.
+      </p>  
+    </div><!-- fin de capa de contenido -->
+    <include src="./views/footer.html"></include><!-- se incluye pie de página de archivo HTML externo-->
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body><!-- fin de cuerpo -->
+</html><!-- fin de HTML -->

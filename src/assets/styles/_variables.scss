@@ -1,0 +1,20 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/* Personalización de colores del contenedor y cuerpo de la página */
+$color-master-fondo: #045510;
+$color-letra-fondo: #000078;
+$color-master-container: #dafaff;
+$color-master-bg: #80a85b;
+
+/* Personalización de colores de banner */
+$color-banner-border: #045510;
+$color-banner-fondo: #5baa67;
+
+/* Configuración de ancho del viewport */
+$mqMinWidth: 512px; //anchura mínima
+$mqMaxWidth: 1024px; //anchura máxima
